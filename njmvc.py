@@ -60,13 +60,14 @@ def send_email(content):
  server.login(username,password)  
  server.sendmail(from_address, to_address, content)  
  server.quit()
-
+    
+deadline = parser.parse('04/22/22') # What date you want to get as latest?
 # NOW EMAIL ME IF WE FIND AN APPOINTMENT
 for t in times:
     temp = t['FirstOpenSlot']
     tempnew = re.sub(r'.', '', temp, count = 48)
     tempnew2 = tempnew.lstrip(": ")
     res = parser.parse(tempnew2, fuzzy=True)
-    deadline = parser.parse('04/22/22')
+    
     condition = res < deadline
-    if condition: send_email("22 NISAN ONCESINE BIR TANE YER VAR Go ahead telegov.njportal.com/njmvc/AppointmentWizard/19")
+    if condition: send_email("There's an available appointment before the deadline. Go ahead telegov.njportal.com/njmvc/AppointmentWizard/19")

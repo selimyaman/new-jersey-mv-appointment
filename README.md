@@ -6,7 +6,7 @@ You can specify the locations you want to have an appointment.
 
 You can customize which type of appointment you want.
 
-And then it emails you when the script is run.
+And then it emails you when the script is run. As soon as you get an email, you should click on the link on the email and make an appointment through NJ MVC's website.
 
 So the best use of this would be setting up with cron job - where it'll be run regularly (I would prefer running every minute or so because the appointments fill up quickly).
 

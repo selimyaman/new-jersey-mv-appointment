@@ -13,3 +13,6 @@ So the best use of this would be setting up with cron job - where it'll be run r
 Your cron job will look like this:
 
 `*/1 * * * * /usr/local/bin/python3 /Users/your-username/njmvc.py`
+
+To set up a cronjob on your Mac, you can use the instructions here:
+https://towardsdatascience.com/how-to-schedule-python-scripts-with-cron-the-only-guide-youll-ever-need-deea2df63b4e
